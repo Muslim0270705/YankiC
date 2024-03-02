@@ -1,10 +1,11 @@
 import React from 'react';
+import News from "./News/News";
 
 const Home = () => {
     return (
-        <div>
-            Главная
-        </div>
+        <>
+           <News/>
+        </>
     );
 };
 

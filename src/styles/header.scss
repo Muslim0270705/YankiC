@@ -1,6 +1,7 @@
 .header{
   padding: 15px 0;
-  background: black;
+  position: absolute;
+  width: 100%;
   color: white;
   &__nav{
     display: flex;
@@ -10,6 +11,16 @@
   &__menu{
     display: flex;
     column-gap: 20px;
+    &-item{
+      a{
+        font-family: Raleway,sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21px;
+        cursor: pointer;
+        color: white;
+      }
+    }
   }
   &__icons{
     display: flex;
