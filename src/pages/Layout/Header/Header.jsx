@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
+import bg from "../../../images/Фон.png"
 const Header = () => {
     return (
         <header className={"header"}>
@@ -12,6 +12,7 @@ const Header = () => {
                             <rect y="10" width="26" height="4" fill="white"/>
                             <rect y="20" width="18" height="4" fill="white"/>
                         </svg>
+
                     </div>
                     <ul className={"header__menu"}>
                         <li className={"header__menu-item"}>
