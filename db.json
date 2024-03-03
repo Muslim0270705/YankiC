@@ -1,0 +1,202 @@
+{
+  "products": [
+    {
+      "id":1,
+      "title": "Nike Mercurial Vapor 15 Elite",
+      "category": {
+        "id": 1,
+        "name": "shoes"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "color": "red"
+        },
+        {
+          "id": 2,
+          "colors": "green"
+        }
+      ],
+      "price": 250,
+      "genre": "man",
+      "sizes": [
+        {
+          "id": 1,
+          "size": 38
+        },
+        {
+          "id": 2,
+          "size": 39
+        },
+        {
+          "id": 3,
+          "size": 40
+        },
+        {
+          "id": 4,
+          "size": 41
+        },
+        {
+          "id": 5,
+          "size": 42
+        }
+      ],
+      "new": false,
+      "images": [
+        {
+          "id": 1,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 4,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 5,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        }
+      ],
+      "discounts": true
+    },
+    {
+      "id":2,
+      "title": "",
+      "category": {
+        "id": 1,
+        "name": "t-short"
+      },
+      "genre": "woman",
+      "colors": [
+        {
+          "id": 1,
+          "color": "red"
+        },
+        {
+          "id": 2,
+          "colors": "green"
+        }
+      ],
+      "price": 250,
+      "sizes": [
+        {
+          "id": 1,
+          "size": "S"
+        },
+        {
+          "id": 2,
+          "size": "M"
+        },
+        {
+          "id": 3,
+          "size": "L"
+        },
+        {
+          "id": 4,
+          "size": "XL"
+        },
+        {
+          "id": 5,
+          "size": "XXL"
+        }
+      ],
+      "new": false,
+      "images": [
+        {
+          "id": 1,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 4,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 5,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        }
+      ],
+      "discounts": true
+    },
+    {
+      "id":3,
+      "title": "",
+      "genre": "woman",
+      "category": {
+        "id": 1,
+        "name": "pants"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "color": "red"
+        },
+        {
+          "id": 2,
+          "colors": "green"
+        }
+      ],
+      "price": 250,
+      "sizes": [
+        {
+          "id": 1,
+          "size": "S"
+        },
+        {
+          "id": 2,
+          "size": "M"
+        },
+        {
+          "id": 3,
+          "size": "L"
+        },
+        {
+          "id": 4,
+          "size": "XL"
+        },
+        {
+          "id": 5,
+          "size": "XXL"
+        }
+      ],
+      "new": false,
+      "images": [
+        {
+          "id": 1,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 4,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        },
+        {
+          "id": 5,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6bb5384d-a6f2-4235-8324-19384130cf9b/mercurial-vapor-15-elite-firm-ground-low-top-soccer-cleats-NLZxDR.png"
+        }
+      ],
+      "discounts": true
+    }
+  ]
+}
