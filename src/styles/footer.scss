@@ -1,5 +1,5 @@
 .footer{
-  padding: 80px 0;
+  padding: 100px 0 15px 0;
   width: 100%;
   &__row{
     display: flex;
@@ -43,5 +43,13 @@
     color: #252525;
     margin-bottom: 9px;
     cursor: pointer;
+  }
+  &__desc{
+    font-family: Raleway,sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: center;
+    margin: 50px 0 0 0;
   }
 }

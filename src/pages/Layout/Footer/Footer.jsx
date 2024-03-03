@@ -94,7 +94,9 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-
+                <p className={"footer__desc"}>
+                    ©️ 2021 Yanki. All rights reserved
+                </p>
             </div>
         </section>
     );
