@@ -1,0 +1,34 @@
+.email{
+  display: flex;
+  text-align: center;
+   &__text{
+     font-weight: 300;
+     fontont-size: 36px;
+     line-height: 42.26px;
+     padding-top: 50px;
+   }
+  &__email{
+    margin-top: 30px;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+  }
+  &__btn{
+    margin-top: 15px;
+    background: #E0BEA2;
+    width: 600px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      background: #E0BEA3;
+    }
+  }
+  &__desc{
+    margin: 15px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+
+  }
+}
