@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -15,10 +16,15 @@
   margin: 0 auto;
   width: 100%;
 }
+.catalog{
+  padding: 150px 0 0;
+  display: flex;
+  column-gap: 25px;
+}
 @import "header";
 @import "news";
 @import "email";
 @import "footer";
-@import "footer";
+@import "Products";
 @import "catigores";
-
+@import "aside";

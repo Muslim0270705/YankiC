@@ -28,3 +28,36 @@
     column-gap: 13px;
   }
 }
+.newH{
+  .header__menu{
+    display: flex;
+    column-gap: 20px;
+    .header__menu-item{
+      a{
+        font-family: Raleway,sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21px;
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+  .header__lang{
+    color: black;
+    svg{
+      path{
+        fill: black;
+      }
+    }
+  }
+  .header__icons-item{
+    svg{
+      g{
+        path{
+          fill: #E0BEA2;
+        }
+      }
+    }
+  }
+}
