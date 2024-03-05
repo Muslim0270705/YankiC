@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import bg from "../../../images/Фон.png"
 const Header = () => {
     return (
         <header className={"header"}>

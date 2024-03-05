@@ -1,8 +1,8 @@
 import {Route, Routes} from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
 import Home from "./pages/Home/Home";
-import "./styles/style.scss"
 import Catalog from "./pages/Catalog/Catalog";
+import "./styles/style.scss"
 function App() {
   return (
     <Routes>
