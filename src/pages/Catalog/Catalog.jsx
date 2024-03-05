@@ -1,9 +1,14 @@
 import React from 'react';
+import Aside from "./Aside/Aside";
+import Products from "./Products/Products";
 
 const Catalog = () => {
     return (
         <>
-            Каталог
+            <div className="container catalog">
+                <Aside/>
+                <Products/>
+            </div>
         </>
     );
 };

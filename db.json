@@ -350,7 +350,7 @@
       ],
           "discounts": true
         },
-        {
+    {
           "id":6,
           "title": "Air Jordan 9 G",
           "category": {
@@ -421,7 +421,7 @@
               "discounts": true
             },
     {
-      "id":2,
+      "id":7,
       "title": "",
       "category": {
         "id": 1,
@@ -487,7 +487,7 @@
       "discounts": true
     },
     {
-      "id":3,
+      "id":8,
       "title": "",
       "genre": "woman",
       "category": {

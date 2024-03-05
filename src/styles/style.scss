@@ -16,9 +16,15 @@
   margin: 0 auto;
   width: 100%;
 }
+.catalog{
+  padding: 150px 0 0;
+  display: flex;
+  column-gap: 25px;
+}
 @import "header";
 @import "news";
 @import "email";
 @import "footer";
+@import "Products";
 @import "catigores";
-@import "catigores";
+@import "aside";

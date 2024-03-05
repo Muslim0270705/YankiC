@@ -1,0 +1,20 @@
+.aside{
+  padding-left:15px ;
+  width: 15%;
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &-item{
+      font-family: Raleway,sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      text-align: left;
+      &:first-child{
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
