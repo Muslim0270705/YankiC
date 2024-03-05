@@ -16,6 +16,8 @@ const Email = () => {
                 </p>
             </div>
         </section>
+
+
     );
 };
 
