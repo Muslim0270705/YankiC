@@ -2,4 +2,21 @@
   &__selects{
     margin-bottom: 25px;
   }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  &__card{
+    width: calc(33.33333% - 16.66666px);
+    &-color{
+      width: 13px;
+      height: 13px;
+      border: 1px solid grey;
+      border-radius: 50%;
+    }
+    &-img{
+      width: 100%;
+    }
+  }
 }

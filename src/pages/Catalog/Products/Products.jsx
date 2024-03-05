@@ -6,7 +6,7 @@ const Products = () => {
     useEffect(() => {
         getProducts()
     },[])
-    console.log(data)
+
     return (
         <section className={"products"}>
             <div className={"products__selects"}>
@@ -43,34 +43,35 @@ const Products = () => {
                     </option>
                 </select>
             </div>
-            <div className="prodcuts__row">
-                <div className="products__card">
-                    <img className={"products__card-img"} src={img} alt=""/>
-                    <h2 className={"products__card-title"}>
-                        title
-                    </h2>
-                    <p className={"products__card-price"}>
-                        125125
-                    </p>
-                    <div className={"products__card-sizes"}>
-                        <p className={"products__card-size"}>
-                            Xl
-                        </p>
-                        <p className={"products__card-size"}>
-                            Xl
-                        </p>
-                        <p className={"products__card-size"}>
-                            Xl
-                        </p>
-                        <p className={"products__card-size"}>
-                            Xl
-                        </p>
-                    </div>
-                    <div className={"products__card-colors"}>
-                        <div style={{background:"black"}} className={"products__card-color"}/>
-                        <div style={{background:"red"}} className={"products__card-color"}/>
-                    </div>
-                </div>
+            <div className="products__row">
+                {
+                    data.map(item => (
+                        <div className="products__card">
+                            <img className={"products__card-img"} src={item.images[0].img} alt=""/>
+                            <h2 className={"products__card-title"}>
+                                {item.title}
+                            </h2>
+                            <p className={"products__card-price"}>
+                                {item.price}
+                            </p>
+                            <div className={"products__card-sizes"}>
+                                {
+                                    item.sizes.map(item => (
+                                        <p className={"products__card-size"}>
+                                            {item.size}
+                                        </p>
+                                    ))
+                                }
+                            </div>
+                            <div className={"products__card-colors"}>
+                                {item.colors.map(item => (
+                                    <div style={{background: `${item.color}`}} className={"products__card-color"}/>
+                                ))}
+                            </div>
+                        </div>
+
+                    ))
+                }
             </div>
         </section>
     );
