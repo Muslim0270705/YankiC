@@ -14,11 +14,11 @@
         },
         {
           "id": 2,
-          "colors": "green"
+          "color": "green"
         },
         {
           "id": 3,
-          "colors": "white"
+          "color": "white"
         }
       ],
       "price": 250,
@@ -84,11 +84,11 @@
         },
         {
           "id": 2,
-          "colors": "green"
+          "color": "green"
         },
         {
           "id": 3,
-          "colors": "white"
+          "color": "white"
         }
       ],
       "price": 110,
@@ -154,11 +154,11 @@
         },
         {
           "id": 2,
-          "colors": "green"
+          "color": "green"
         },
         {
           "id": 3,
-          "colors": "white"
+          "color": "white"
         }
       ],
       "price": 210,
@@ -224,11 +224,11 @@
         },
         {
           "id": 2,
-          "colors": "green"
+          "color": "green"
         },
         {
           "id": 3,
-          "colors": "white"
+          "color": "white"
         }
       ],
       "price": 210,
@@ -294,11 +294,11 @@
         },
         {
           "id": 2,
-          "colors": "green"
+          "color": "green"
         },
         {
           "id": 3,
-          "colors": "white"
+          "color": "white"
         }
       ],
       "price": 120,
@@ -364,11 +364,11 @@
             },
             {
               "id": 2,
-              "colors": "green"
+              "color": "green"
             },
             {
               "id": 3,
-              "colors": "white"
+              "color": "white"
             }
           ],
           "price": 230,
@@ -422,7 +422,7 @@
             },
     {
       "id":7,
-      "title": "",
+      "title": "321",
       "category": {
         "id": 1,
         "name": "t-short"
@@ -435,7 +435,7 @@
         },
         {
           "id": 2,
-          "colors": "green"
+          "color": "green"
         }
       ],
       "price": 250,
@@ -488,7 +488,7 @@
     },
     {
       "id":8,
-      "title": "",
+      "title": "123",
       "genre": "woman",
       "category": {
         "id": 1,
@@ -501,7 +501,7 @@
         },
         {
           "id": 2,
-          "colors": "green"
+          "color": "green"
         }
       ],
       "price": 250,
