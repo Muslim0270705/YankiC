@@ -1,11 +1,5 @@
 import React from 'react';
 import {Link, useLocation} from "react-router-dom";
-<<<<<<< HEAD
-=======
-const Header = () => {
-
-    const location = useLocation()
->>>>>>> e6dfb18ebdb4e6e5a164f06961ccd861cc4f622d
 
 const Header = () => {
 const location = useLocation()
