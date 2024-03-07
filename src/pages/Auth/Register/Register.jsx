@@ -8,7 +8,7 @@ const Register = () => {
                 </h2>
             <div className="register__row">
                 <input  placeholder={"Ваше имя*"} className={"register__inout"} type="text"/>
-                <input  name={"email"} placeholder={"Ваш e-mail*"} className={"register__inout"} type="email"/>
+                <input  placeholder={"Ваш e-mail*"} className={"register__inout"} type="email"/>
                 <input  placeholder={"Ваш пароль*"} className={"register__inout"} type="password"/>
                 <button className="register__btn" type={"submit"}>
                     ПРОДОЛЖИТЬ
@@ -16,7 +16,6 @@ const Register = () => {
             </div>
         </form>
 </div>
-
     )}
 
 
