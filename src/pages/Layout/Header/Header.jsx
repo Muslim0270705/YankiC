@@ -5,13 +5,13 @@ const Header = () => {
     const location = useLocation()
 
     return (
-        <header className={`header ${location.pathname === "/catalog" ? "newH" : ""}`}>
+        <header className={`header ${location.pathname !== "/" ? "newH" : ""}`}>
             <div className="container">
                 <div className="header__nav">
                     <div className={"header__burger"}>
 
                         {
-                            location.pathname === "/catalog" ?
+                            location.pathname !== "/" ?
                                 <svg width="34" height="24" viewBox="0 0 34 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <rect width="34" height="4" fill="#E0BEA2"/>
@@ -50,7 +50,7 @@ const Header = () => {
                     </ul>
                     <h1 className={"header__logo"}>
                         {
-                            location.pathname === "/catalog" ?
+                            location.pathname !== "/" ?
                                 <svg width="195" height="40" viewBox="0 0 195 40" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
