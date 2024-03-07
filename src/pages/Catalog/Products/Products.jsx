@@ -1,47 +1,55 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import img from "../../../images/Rectangle 7.png"
 import {CustomContext} from "../../../utils/Context";
 const Products = () => {
     const {data,getProducts} = useContext(CustomContext)
+    const [size,setSize] = useState("")
     useEffect(() => {
         getProducts()
     },[])
-
+    const productFilter = (e) => {
+        console.log(e.target.value)
+    }
     return (
         <section className={"products"}>
             <div className={"products__selects"}>
-                <select className={"products__select"} name="Name" id="">
-                    <option value="">
-                        L
+                <select onChange={(e) => productFilter(e)} className={"products__select"} name="Size" id="">
+                    <option value="38">
+                        38
                     </option>
-                    <option value="">
-                        XL
+                    <option value="39">
+                        39
                     </option>
-                </select>
-                <select className={"products__select"} name="Name" id="">
-                    <option value="">
-                        L
+                    <option value="40">
+                        40
                     </option>
-                    <option value="">
-                        XL
+                    <option value="41">
+                        41
                     </option>
-                </select>
-                <select className={"products__select"} name="Name" id="">
-                    <option value="">
-                        L
-                    </option>
-                    <option value="">
-                        XL
+                    <option value="42">
+                        42
                     </option>
                 </select>
-                <select className={"products__select"} name="Name" id="">
-                    <option value="">
-                        L
+                <select className={"products__select"} name="Цвет" id="">
+                    <option value="red">
+                        red
                     </option>
-                    <option value="">
-                        XL
+                    <option value="black">
+                        black
+                    </option>
+                    <option value="white">
+                        white
                     </option>
                 </select>
+                <select className={"products__select"} name="Цена" id="">
+                    <option value="plus">
+                        По возростанию
+                    </option>
+                    <option value="minus">
+                        По убыванию
+                    </option>
+                </select>
+
             </div>
             <div className="products__row">
                 {
