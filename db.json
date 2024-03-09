@@ -1,4 +1,26 @@
 {
+  "category" : [
+    {
+      "id": 1,
+      "name": "Dunk"
+    },
+    {
+      "id": 2,
+      "name": "Air Max"
+    },
+    {
+      "id": 3,
+      "name": "Air Force"
+    },
+    {
+      "id": 4,
+      "name": "Jordan"
+    },
+    {
+      "id": 5,
+      "name": "Sb"
+    }
+  ],
   "products": [
     {
       "id":1,
