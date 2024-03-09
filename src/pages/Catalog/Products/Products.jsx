@@ -66,7 +66,7 @@ const Products = () => {
                                 </p>
                                 <div className={"products__card-sizes"}>
                                     {
-                                        item.sizes.map(item => (
+                                        item?.sizes?.map(item => (
                                             <p className={"products__card-size"}>
                                                 {item.size}
                                             </p>
