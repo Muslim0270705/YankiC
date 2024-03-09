@@ -22,6 +22,137 @@
     }
   ],
   "products": [
+    {
+      "id":1,
+      "title": "Jordan Spizike Low",
+      "category": {
+        "id": 4,
+        "name": "shoes"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "color": "red"
+        },
+        {
+          "id": 2,
+          "color": "green"
+        },
+        {
+          "id": 3,
+          "color": "white"
+        }
+      ],
+      "price": 160,
+      "genre": "man",
+      "sizes": [
+        {
+          "id": 1,
+          "size": 38
+        },
+        {
+          "id": 2,
+          "size": 39
+        },
+        {
+          "id": 3,
+          "size": 40
+        },
+        {
+          "id": 4,
+          "size": 41
+        },
+        {
+          "id": 5,
+          "size": 42
+        }
+      ],
+      "new": false,
+      "images": [
+        {
+          "id": 1,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8105650c-249e-469f-aeef-fefcca2083a6/jordan-spizike-low-mens-shoes-LDT8cp.png"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/57189a9f-2d08-414f-a0b4-bff6e5e601b9/jordan-spizike-low-mens-shoes-LDT8cp.png"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e84d9edc-cf4f-468c-b485-0b1bac862895/jordan-spizike-low-mens-shoes-LDT8cp.png"
+        },
+        {
+          "id": 4,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a1c2356-e257-47f7-9ff9-97b6c9067b6e/jordan-spizike-low-mens-shoes-LDT8cp.png"
+        },
+        {
+          "id": 5,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c930a5fe-0be1-4cdb-bafc-f99133a3fbf8/jordan-spizike-low-mens-shoes-LDT8cp.png"
+        }
+      ],
+      "discounts": true
+    },
+    {
+      "id":2,
+      "title": "NAir Jordan XXXVIII Low H",
+      "category": {
+        "id": 4,
+        "name": "Jordan"
+      },
+      "colors": [
+        {
+          "id": 1,
+          "color": "red"
+        },
+        {
+          "id": 2,
+          "color": "green"
+        },
+        {
+          "id": 3,
+          "color": "white"
+        }
+      ],
+      "price": 185,
+      "genre": "man",
+      "sizes": [
+        {
+          "id": 1,
+          "size": 38
+        },
+        {
+          "id": 2,
+          "size": 39
+        },
+        {
+          "id": 3,
+          "size": 40
+        },
+        {
+          "id": 4,
+          "size": 41
+        },
+        {
+          "id": 5,
+          "size": 42
+        }
+      ],
+      "new": false,
+      "images": [
+        {
+          "id": 1,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/55f445b4-e252-4ef3-9a60-c97c134ce5a0/air-jordan-xxxviii-low-h-womens-basketball-shoes-8xf6vs.png"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e7aab076-7818-46be-af76-a707b254aa5d/air-jordan-xxxviii-low-h-womens-basketball-shoes-8xf6vs.png"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/af28f58c-b784-4724-9a00-22ee546ec9e4/air-jordan-xxxviii-low-h-womens-basketball-shoes-8xf6vs.png"
+        },
+        {
+          "id": 4,
      {
       "id":41,
       "title": "Nike SB Vertebrae",
