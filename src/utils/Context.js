@@ -5,7 +5,7 @@ export const CustomContext = createContext()
 
 export const Context = (props) => {
     const [data,setData] = useState([])
-    const [product,setProduct] = useState({})
+    const [product,setProduct] = useState(null)
     const [user,setUser] = useState({})
     const getProducts = () => {
         axios("http://localhost:4444/products")
