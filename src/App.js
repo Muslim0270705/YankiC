@@ -6,6 +6,7 @@ import "./styles/style.scss"
 import Register from "./pages/Auth/Register/Register";
 import Favorites from "./pages/Favorites/Favorites";
 import Product from "./pages/Product/Product";
+import Login from "./pages/Auth/Login/Login";
 function App() {
   return (
     <Routes>
@@ -16,6 +17,8 @@ function App() {
           <Route path={"/favorites"} element={<Favorites/>}/>
       </Route>
         <Route path={"/register"} element={<Register/>}/>
+        <Route path={"/login"} element={<Login/>}/>
+        <Route path={"/favorites"} element={<Favorites/>}/>
     </Routes>
   );
 }
