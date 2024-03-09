@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import img from "../../../images/Rectangle 7.png"
 import {CustomContext} from "../../../utils/Context";
+import {Link} from "react-router-dom";
 const Products = () => {
     const {data,getProducts} = useContext(CustomContext)
     const [size,setSize] = useState("")
@@ -54,30 +55,31 @@ const Products = () => {
             <div className="products__row">
                 {
                     data.map(item => (
-                        <div className="products__card">
-                            <img className={"products__card-img"} src={item.images[0].img} alt=""/>
-                            <h2 className={"products__card-title"}>
-                                {item.title}
-                            </h2>
-                            <p className={"products__card-price"}>
-                                {item.price}
-                            </p>
-                            <div className={"products__card-sizes"}>
-                                {
-                                    item.sizes.map(item => (
-                                        <p className={"products__card-size"}>
-                                            {item.size}
-                                        </p>
-                                    ))
-                                }
+                        <Link className="products__card" to={`/product/${item.id}`}>
+                            <div>
+                                <img className={"products__card-img"} src={item.images[0].img} alt=""/>
+                                <h2 className={"products__card-title"}>
+                                    {item.title}
+                                </h2>
+                                <p className={"products__card-price"}>
+                                    {item.price}
+                                </p>
+                                <div className={"products__card-sizes"}>
+                                    {
+                                        item.sizes.map(item => (
+                                            <p className={"products__card-size"}>
+                                                {item.size}
+                                            </p>
+                                        ))
+                                    }
+                                </div>
+                                <div className={"products__card-colors"}>
+                                    {item.colors.map(item => (
+                                        <div style={{background: `${item.color}`}} className={"products__card-color"}/>
+                                    ))}
+                                </div>
                             </div>
-                            <div className={"products__card-colors"}>
-                                {item.colors.map(item => (
-                                    <div style={{background: `${item.color}`}} className={"products__card-color"}/>
-                                ))}
-                            </div>
-                        </div>
-
+                        </Link>
                     ))
                 }
             </div>

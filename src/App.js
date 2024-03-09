@@ -4,6 +4,9 @@ import Home from "./pages/Home/Home";
 import Catalog from "./pages/Catalog/Catalog";
 import "./styles/style.scss"
 import Register from "./pages/Auth/Register/Register";
+import Favorites from "./pages/Favorites/Favorites";
+import Product from "./pages/Product/Product";
+import Login from "./pages/Auth/Login/Login";
 import Basket from "./pages/Basket/Basket";
 function App() {
   return (
@@ -12,9 +15,12 @@ function App() {
         <Route path={"/"} element={<Home/>}/>
         <Route path={"/catalog"} element={<Catalog/>}/>
         <Route path={"/basket"} element={<Basket/>}/>
-
+        <Route path={"/product/:id"} element={<Product/>}/>
+          <Route path={"/favorites"} element={<Favorites/>}/>
       </Route>
         <Route path={"/register"} element={<Register/>}/>
+        <Route path={"/login"} element={<Login/>}/>
+        <Route path={"/favorites"} element={<Favorites/>}/>
     </Routes>
   );
 }
