@@ -51,10 +51,12 @@
       }
     }
   }
-  .header__icons-item{
-    svg{
-      g{
-        path{
+  .header__icons-item {
+    svg {
+      fill: #FFFFFF;
+
+      g {
+        path {
           fill: #E0BEA2;
         }
       }
