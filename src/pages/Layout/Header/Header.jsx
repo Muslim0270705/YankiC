@@ -148,6 +148,7 @@ const Header = () => {
 
                         </li>
                         <li className={"header__icons-item"}>
+                            <Link to={"/basket"}>
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_499_34)">
@@ -161,7 +162,7 @@ const Header = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-
+                            </Link>
                         </li>
                     </ul>
                 </div>
