@@ -25,6 +25,10 @@
     {
       "id":30,
       "title": "Nike Dunk Low Retro",
+      "category": {
+        "id": 5,
+        "name": "Sb"
+      },
       "colors": [
         {
           "id": 1,
@@ -48,6 +52,15 @@
         }
       ],
       "price": 115,
+          "id": 2,
+          "color": "white"
+        },
+        {
+          "id": 3,
+          "color": "black"
+        }
+      ],
+      "price": 85,
       "genre": "man",
       "sizes": [
         {
@@ -92,6 +105,22 @@
         {
           "id": 5,
           "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0f557b1f-ba79-419c-a814-f7b5d117fbb2/dunk-low-retro-mens-shoes-1xlGBR.png"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08c533b5-526b-4be3-ac6f-c11d9924cbc2/sb-vertebrae-mens-shoes-M9gJjv.png"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4feb2681-45e2-4770-873d-e4264d7a3405/sb-vertebrae-mens-shoes-M9gJjv.png"
+        },
+        {
+          "id": 4,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/abcf86a2-c851-408d-ab5d-c99d65bec970/sb-vertebrae-mens-shoes-M9gJjv.png"
+        },
+        {
+          "id": 5,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5bbdd36f-bfab-4ca5-931e-bfa0584157e4/sb-vertebrae-mens-shoes-M9gJjv.png"
         }
       ],
       "discounts": true
@@ -101,6 +130,12 @@
     {
       "id":31,
       "title": "Nike SB Dunk Low",
+      "id":42,
+      "title": "Nike SB Zoom Janoski OG+",
+      "category": {
+        "id": 5,
+        "name": "Sb"
+      },
       "colors": [
         {
           "id": 1,
@@ -124,6 +159,15 @@
         }
       ],
       "price": 125,
+          "id": 2,
+          "color": "white"
+        },
+        {
+          "id": 3,
+          "color": "black"
+        }
+      ],
+      "price": 95,
       "genre": "man",
       "sizes": [
         {
@@ -168,6 +212,23 @@
         {
           "id": 5,
           "img": "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/c1c86fd3-6129-4922-9626-e7da43a5ed76/nike-sb-dunk-low-pure-platinum-and-vivid-purple-fz5251-001-release-date.jpg"
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1de56bb8-71e8-4831-8a80-849ea3b3781a/sb-zoom-janoski-og-skate-shoes-p7gRgw.png"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/23df6c15-326e-4fc3-8b09-dd1457aa7ce8/sb-zoom-janoski-og-skate-shoes-p7gRgw.png"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87c3082b-76d4-4243-9899-676e81bdeafa/sb-zoom-janoski-og-skate-shoes-p7gRgw.png"
+        },
+        {
+          "id": 4,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13f79402-0355-4098-b819-1ae079495f11/sb-zoom-janoski-og-skate-shoes-p7gRgw.png"
+        },
+        {
+          "id": 5,
+          "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4f7027-ad52-4566-8da9-87c87224ad8b/sb-zoom-janoski-og-skate-shoes-p7gRgw.png"
         }
       ],
       "discounts": true
@@ -177,18 +238,41 @@
     {
       "id":32,
       "title": "Nike Dunk Low Retro Premium",
+      "id":43,
+      "title": "Nike SB Dunk Low",
+      "category": {
+        "id": 5,
+        "name": "Sb"
+      },
       "colors": [
         {
           "id": 1,
-          "color": "black"
+          "color": "red"
         },
         {
           "id": 2,
-          "color": "green"
+          "color": "white"
         },
         {
           "id": 3,
           "color": "blue"
+          "color": "black"
+        }
+      ],
+      "price": 125,
+      "genre": "man",
+      "sizes": [
+        {
+          "id": 1,
+          "size": 38
+        },
+        {
+          "id": 2,
+          "size": 39
+        },
+        {
+          "id": 3,
+          "size": 40
         },
         {
           "id": 4,
@@ -227,6 +311,7 @@
       "images": [
         {
           "id": 1,
+
           "img": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fe72e417-c4e4-4013-a0a8-d45b039adc71/dunk-low-retro-premium-mens-shoes-20hjNd.png"
         },
         {
@@ -320,6 +405,24 @@
         {
           "id": 5,
           "img": "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/89ef3837-5efc-49a4-8b5e-f3247ddcbcec/nike-dunk-low-plum-release-date.jpg"
+
+          "img": "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/30a2a5bf-f240-48bf-8acf-86ec8f19f79c/nike-sb-dunk-low-pure-platinum-and-vivid-purple-fz5251-001-release-date.jpg"
+        },
+        {
+          "id": 2,
+          "img": "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/2ee717e2-7d6a-40a6-8b51-403ed471fc1f/nike-sb-dunk-low-pure-platinum-and-vivid-purple-fz5251-001-release-date.jpg"
+        },
+        {
+          "id": 3,
+          "img": "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/f45696f0-09f1-44e8-aa7a-fbbd6d82d260/nike-sb-dunk-low-pure-platinum-and-vivid-purple-fz5251-001-release-date.jpg"
+        },
+        {
+          "id": 4,
+          "img": "https://static.nike.com/a/images/t_prod_sc/w_640,c_limit,f_auto/af91faaf-dcec-4dea-a94d-e2a6d6e831fe/nike-sb-dunk-low-pure-platinum-and-vivid-purple-fz5251-001-release-date.jpg"
+        },
+        {
+          "id": 5,
+          "img": "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/4a22f703-5166-4240-b4c7-f7125f4a0928/nike-sb-dunk-low-pure-platinum-and-vivid-purple-fz5251-001-release-date.jpg"
         }
       ],
       "discounts": true
