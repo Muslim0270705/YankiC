@@ -62,7 +62,7 @@ const Products = () => {
                                     {item.title}
                                 </h2>
                                 <p className={"products__card-price"}>
-                                    {item.price}
+                                    ${item.price}
                                 </p>
                                 <div className={"products__card-sizes"}>
                                     {
