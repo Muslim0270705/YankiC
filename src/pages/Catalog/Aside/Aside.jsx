@@ -1,28 +1,27 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
+import {CustomContext} from "../../../utils/Context";
 
 const Aside = () => {
+    const {getCategories,categories,setCategoryId} = useContext(CustomContext)
+    useEffect(() => {
+        getCategories()
+    },[])
+
     return (
         <aside className={"aside"}>
             <ul className={"aside__menu"}>
                 <li className={"aside__menu-item"}>
-                    Каталог
+                    Kаталог
                 </li>
-                <li className={"aside__menu-item"}>
-                    Тренчи
+                {
 
-                </li>
-                <li className={"aside__menu-item"}>
-                    Тренчи
-                </li>
-                <li className={"aside__menu-item"}>
-                    New
-                </li>
-                <li className={"aside__menu-item"}>
-                    New
-                </li>
-                <li className={"aside__menu-item"}>
-                    New
-                </li>
+                    categories.map(item => (
+                        <li onClick={() => setCategoryId(item.id)} className={"aside__menu-item"}>
+                            {item.name}
+                        </li>
+                    ))
+                }
+
             </ul>
         </aside>
     );

@@ -1,15 +1,16 @@
-import React, { useContext, useEffect } from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { useParams } from "react-router-dom";
 import { CustomContext } from "../../utils/Context";
 
 const Product = () => {
     const params = useParams();
-    const { getOneProduct, product } = useContext(CustomContext);
-
+    const { getOneProduct, product,addCart} = useContext(CustomContext);
+    const [size,setSize] = useState(1)
+    const [color,setColor] = useState(3)
     useEffect(() => {
         getOneProduct(params.id);
     }, [params.id]);
-
+    console.log(color,size)
     return (
         <section className="product">
             <div className="container">
@@ -28,13 +29,13 @@ const Product = () => {
                                 </div>
                                 <div className="product__right-colors">
                                     {product.colors?.map((item) => ( // Added optional chaining
-                                        <div key={item.id} style={{ background: `${item.color}`}} className="product__right-color" />
+                                        <div onClick={() => setColor(item.id)} key={item.id} style={{ background: `${item.color}`}} className="product__right-color" />
                                     ))}
                                 </div>
                                 <div className="product__right-sizes">
                                     {
                                         product.sizes.map(item => (
-                                            <p key={item.id} className="product__right-size">
+                                            <p onClick={() => setSize(item.id)} key={item.id} className="product__right-size">
                                                 {item.size}
                                             </p>
                                         ))
@@ -45,7 +46,7 @@ const Product = () => {
                             <p>Loading...</p> // Display a loading message while product data is being fetched
                         )}
                         <div className="product__btns">
-                            <button className="product__btns-cup">
+                            <button onClick={() => addCart({...product,colors:product.colors[color - 1],sizes:product.sizes[size -1],count:1})} className="product__btns-cup">
                                 В КАРЗИНУ
                             </button>
 

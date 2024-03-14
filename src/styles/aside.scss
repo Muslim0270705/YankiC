@@ -1,12 +1,13 @@
 .aside{
   padding-left:15px ;
-  width: 15%;
+  width: 20%;
   &__menu{
     display: flex;
     flex-direction: column;
     gap: 25px;
     &-item{
       font-family: Raleway,sans-serif;
+      white-space: nowrap;
       font-size: 16px;
       font-weight: 300;
       line-height: 19px;

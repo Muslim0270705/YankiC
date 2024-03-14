@@ -1,79 +1,54 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import img from "../../images/Rectangle 7.png"
+import {CustomContext} from "../../utils/Context";
 const Basket = () => {
+    const {cart,cartPrice} = useContext(CustomContext)
     return (
         <section className="basket">
                 <h2 className="basket__title">Ваш заказ</h2>
-               <div className="basket__row">
-                    <div className="basket__card">
-                        <img src={img} alt="" className="basket__card-img"/>
-                        <p className="basket__card-id">арт. 1589956</p>
-                        <h3 className="basket__cart">Кремовое пальто</h3>
-                    </div>
-                   <div style={{background:"#F1DDAA"}} className="basket__color"/>
-                   <select className="basket__select" name="" id="">
-                       <option value="">L</option>
-                       <option value="">L</option>
-                       <option value="">L</option>
-                       <option value="">L</option>
-                       <option value="">L</option>
-                   </select>
-                   <div className="basket__number">
-                       <button className="basket__number-minus">-</button>
-                        <p className="basket__number-count">1</p>
-                       <button className="basket__number-plus">+</button>
-                   </div>
-                   <div className="basket__price">
-                       <p className="basket__price">938 грв</p>
-                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <g clipPath="url(#clip0_267_438)">
-                               <path d="M18.75 5H25V7.5H22.5V23.75C22.5 24.0815 22.3683 24.3995 22.1339 24.6339C21.8995 24.8683 21.5815 25 21.25 25H3.75C3.41848 25 3.10054 24.8683 2.86612 24.6339C2.6317 24.3995 2.5 24.0815 2.5 23.75V7.5H0V5H6.25V1.25C6.25 0.918479 6.3817 0.600537 6.61612 0.366116C6.85054 0.131696 7.16848 0 7.5 0H17.5C17.8315 0 18.1495 0.131696 18.3839 0.366116C18.6183 0.600537 18.75 0.918479 18.75 1.25V5ZM20 7.5H5V22.5H20V7.5ZM8.75 11.25H11.25V18.75H8.75V11.25ZM13.75 11.25H16.25V18.75H13.75V11.25ZM8.75 2.5V5H16.25V2.5H8.75Z" fill="#E0BEA2"/>
-                           </g>
-                           <defs>
-                               <clipPath id="clip0_267_438">
-                                   <rect width="25" height="25" fill="white"/>
-                               </clipPath>
-                           </defs>
-                       </svg>
-                   </div>
-               </div>
-            <div className="basket__line"/>
-            <div className="basket__row">
-                <div className="basket__card">
-                    <img src={img} alt="" className="basket__card-img"/>
-                    <p className="basket__card-id">арт. 1589956</p>
-                    <h3 className="basket__cart">Кремовое пальто</h3>
-                </div>
-                <div style={{background:"#F1DDAA"}} className="basket__color"></div>
-                <select className="basket__select" name="" id="">
-                    <option value="">L</option>
-                    <option value="">L</option>
-                    <option value="">L</option>
-                    <option value="">L</option>
-                    <option value="">L</option>
-                </select>
-                <div className="basket__number">
-                    <button className="basket__number-minus">-</button>
-                    <p className="basket__number-count">1</p>
-                    <button className="basket__number-plus">+</button>
-                </div>
-                <div className="basket__price">
-                    <p className="basket__price">938 грв</p>
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_267_438)">
-                            <path d="M18.75 5H25V7.5H22.5V23.75C22.5 24.0815 22.3683 24.3995 22.1339 24.6339C21.8995 24.8683 21.5815 25 21.25 25H3.75C3.41848 25 3.10054 24.8683 2.86612 24.6339C2.6317 24.3995 2.5 24.0815 2.5 23.75V7.5H0V5H6.25V1.25C6.25 0.918479 6.3817 0.600537 6.61612 0.366116C6.85054 0.131696 7.16848 0 7.5 0H17.5C17.8315 0 18.1495 0.131696 18.3839 0.366116C18.6183 0.600537 18.75 0.918479 18.75 1.25V5ZM20 7.5H5V22.5H20V7.5ZM8.75 11.25H11.25V18.75H8.75V11.25ZM13.75 11.25H16.25V18.75H13.75V11.25ZM8.75 2.5V5H16.25V2.5H8.75Z" fill="#E0BEA2"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_267_438">
-                                <rect width="25" height="25" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
-            <div className="basket__line"/>
+                {
+                    cart.map(item => (
+                        <>
+                            <div className="basket__row">
+
+                                <div className="basket__card">
+                                    <img src={item.images[0].img} alt="" className="basket__card-img"/>
+                                    <p className="basket__card-id">арт. 1589956</p>
+                                    <h3 className="basket__cart">{item.title}</h3>
+                                </div>
+                                <div style={{background: `${item.colors.color}`}} className="basket__color"/>
+                                <p>
+                                    Размер: {item.sizes.size}
+                                </p>
+                                <div className="basket__number">
+                                    <button className="basket__number-minus">-</button>
+                                    <p className="basket__number-count">{item.count}</p>
+                                    <button className="basket__number-plus">+</button>
+                                </div>
+                                <div className="basket__price">
+                                    <p className="basket__price">${item.price}</p>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_267_438)">
+                                            <path
+                                                d="M18.75 5H25V7.5H22.5V23.75C22.5 24.0815 22.3683 24.3995 22.1339 24.6339C21.8995 24.8683 21.5815 25 21.25 25H3.75C3.41848 25 3.10054 24.8683 2.86612 24.6339C2.6317 24.3995 2.5 24.0815 2.5 23.75V7.5H0V5H6.25V1.25C6.25 0.918479 6.3817 0.600537 6.61612 0.366116C6.85054 0.131696 7.16848 0 7.5 0H17.5C17.8315 0 18.1495 0.131696 18.3839 0.366116C18.6183 0.600537 18.75 0.918479 18.75 1.25V5ZM20 7.5H5V22.5H20V7.5ZM8.75 11.25H11.25V18.75H8.75V11.25ZM13.75 11.25H16.25V18.75H13.75V11.25ZM8.75 2.5V5H16.25V2.5H8.75Z"
+                                                fill="#E0BEA2"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_267_438">
+                                                <rect width="25" height="25" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div className="basket__line"/>
+                        </>
+                    ))
+                }
+
             <div className="basket__cens">
-                К оплате: <span>15250 грн</span>
+                К оплате: <span>{cartPrice}</span>
             </div>
             <div className="basket__decor">
 
@@ -148,7 +123,7 @@ const Basket = () => {
                             <span>-69 грн</span>
                         </p>
                         <p className="basket__order-shiping">ИТОГО:
-                        <span>15250 грн</span>
+                        <span>{cartPrice}</span>
                         </p>
                         <button className="basket__btn">
                             ОФОРМИТЬ ЗАКАЗ

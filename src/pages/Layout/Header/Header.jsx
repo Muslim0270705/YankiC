@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link, useLocation} from "react-router-dom";
+import {CustomContext} from "../../../utils/Context";
+import { IoLogOutOutline } from "react-icons/io5";
 
 const Header = () => {
-const location = useLocation()
+    const location = useLocation()
+    const {user,logoutUser} = useContext(CustomContext)
     return (
         <header className={`header ${location.pathname !== "/" ? "newH" : ""}`}>
             <div className="container">
@@ -112,7 +115,9 @@ const location = useLocation()
                             </svg>
                         </li>
                         <li className={"header__icons-item"}>
+
                             {
+                                user ? <IoLogOutOutline onClick={logoutUser} style={{cursor:"pointer"}} size={30}/> :
                                  <Link to={"/register"} className={"header__auth"}>
                                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
