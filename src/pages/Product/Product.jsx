@@ -29,13 +29,13 @@ const Product = () => {
                                 </div>
                                 <div className="product__right-colors">
                                     {product.colors?.map((item) => ( // Added optional chaining
-                                        <div onClick={() => setColor(item.id)} key={item.id} style={{ background: `${item.color}`}} className="product__right-color" />
+                                        <div  onClick={() => setColor(item.id)} key={item.id} style={{ background: `${item.color}`,width: color == item.id ? "30px" : "20px", height: color == item.id ? "30px" : "20px"}} className="product__right-color" />
                                     ))}
                                 </div>
                                 <div className="product__right-sizes">
                                     {
                                         product.sizes.map(item => (
-                                            <p onClick={() => setSize(item.id)} key={item.id} className="product__right-size">
+                                            <p style={{fontSize: size == item.id ? "30px" : "20px"}} onClick={() => setSize(item.id)} key={item.id} className="product__right-size">
                                                 {item.size}
                                             </p>
                                         ))

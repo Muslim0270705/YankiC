@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import img from "../../images/Rectangle 7.png"
 import {CustomContext} from "../../utils/Context";
 const Basket = () => {
-    const {cart,cartPrice} = useContext(CustomContext)
+    const {cart,cartPrice,deleteItem,plusCount,minusCount} = useContext(CustomContext)
     return (
         <section className="basket">
                 <h2 className="basket__title">Ваш заказ</h2>
@@ -21,13 +21,13 @@ const Basket = () => {
                                     Размер: {item.sizes.size}
                                 </p>
                                 <div className="basket__number">
-                                    <button className="basket__number-minus">-</button>
+                                    <button onClick={() => minusCount(item)} className="basket__number-minus">-</button>
                                     <p className="basket__number-count">{item.count}</p>
-                                    <button className="basket__number-plus">+</button>
+                                    <button onClick={() => plusCount(item)} className="basket__number-plus">+</button>
                                 </div>
                                 <div className="basket__price">
                                     <p className="basket__price">${item.price}</p>
-                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    <svg onClick={() => deleteItem(item)} width="25" height="25" viewBox="0 0 25 25" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_267_438)">
                                             <path

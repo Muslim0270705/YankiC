@@ -10,6 +10,17 @@
   &__card{
     width: calc(33.33333% - 16.66666px);
     color: black;
+    position: relative;
+    &-svg{
+      position: absolute;
+      top: 0;
+      right: 0;
+      &-nth{
+        position: absolute;
+        top: 10px;
+        right: 12px;
+      }
+    }
     &-color{
       width: 13px;
       height: 13px;

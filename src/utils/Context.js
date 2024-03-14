@@ -13,8 +13,8 @@ export const Context = (props) => {
     const [categoryId,setCategoryId] = useState(null)
     const [cart,setCart] = useState([])
     const [cartPrice, setCartPrice] = useState(0)
-    console.log(cartPrice)
-    console.log(cart)
+    const [favorites , setFavorites] = useState([])
+
     const getProducts = (id) => {
         axios(`http://localhost:4444/products`)
             .then(({data}) => setData(data.filter(item => id ? item.category.id == id : item )))
@@ -31,7 +31,9 @@ export const Context = (props) => {
             .then(({data}) => setProduct(data))
             .catch((err) => alert(err))
     }
-
+    const addFavorites = (item) => {
+        setFavorites([...favorites,item])
+    }
     const registerUser = (e,obj) => {
         e.preventDefault()
         if(obj.name.length > 2 && obj.password.length > 7){
@@ -74,8 +76,28 @@ export const Context = (props) => {
             .catch((err) => alert(err))
     }
     const addCart = (item) => {
-        setCart([...cart,item])
+        if(cart.find((el) => el.id == item.id && item.colors.color == el.colors.color && item.sizes.size == el.sizes.size)){
+            setCart(cart.map(el => item.id == el.id ? {...el,count:el.count + 1} : item))
+        }
+        else{
+            setCart([...cart,item])
+        }
     }
+    const minusCount = (item) => {
+        if(cart.find(el => el.id === item.id && el.colors.color === item.colors.color && item.sizes.size === el.sizes.size).count > 1 ){
+            setCart(cart.map((el) => el.id === item.id && el.colors.color === item.colors.color && item.sizes.size === el.sizes.size ? {...el,count:el.count - 1} : el))
+        }
+        else{
+            deleteItem(item)
+        }
+    }
+    const deleteItem = (item) => {
+        setCart(cart.filter(el => el.id != item.id || item.colors.color != el.colors.color || item.sizes.size != el.sizes.size))
+    }
+    const plusCount = (item) => {
+        setCart(cart.map((el) => el.id === item.id && el.colors.color === item.colors.color && item.sizes.size === el.sizes.size ? {...el,count:el.count + 1} : el))
+    }
+
      const value = {
         data,
         getProducts,
@@ -93,7 +115,11 @@ export const Context = (props) => {
          cart,
          setCart,
          addCart,
-         cartPrice
+         cartPrice,
+         deleteItem,
+         plusCount,
+         minusCount,
+         addFavorites
     }
 
     return <CustomContext.Provider value={value}>

@@ -1,9 +1,11 @@
 import React, {useContext, useEffect, useState} from 'react';
 import img from "../../../images/Rectangle 7.png"
 import {CustomContext} from "../../../utils/Context";
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";import { CiHeart } from "react-icons/ci";
+import { FaHeart } from "react-icons/fa6";
+
 const Products = () => {
-    const {data,getProducts} = useContext(CustomContext)
+    const {data,getProducts,addFavorites} = useContext(CustomContext)
     const [size,setSize] = useState("")
     useEffect(() => {
         getProducts()
@@ -56,6 +58,13 @@ const Products = () => {
                 {
                     data.map(item => (
                         <Link className="products__card" to={`/product/${item.id}`}>
+                            <svg className={"products__card-svg"} width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H40V40H20C8.95431 40 0 31.0457 0 20V0Z" fill="#E0BEA2"/>
+
+                            </svg>
+                            <CiHeart onClick={() => addFavorites(item)} className={"products__card-svg-nth"}/>
+                            <FaHeart className={"products__card-svg-nth"}/>
                             <div>
                                 <img className={"products__card-img"} src={item.images[0].img} alt=""/>
                                 <h2 className={"products__card-title"}>
