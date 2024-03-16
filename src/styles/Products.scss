@@ -1,4 +1,19 @@
 .products{
+  &__add{
+    margin: 0 auto;
+    background: #E0BEA2;
+    color: white;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #E0BEA2;
+    display: block;
+    &:hover{
+      background: white;
+      color: #E0BEA2;
+    }
+  }
   &__selects{
     margin-bottom: 25px;
   }

@@ -5,8 +5,9 @@ import {Link} from "react-router-dom";import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa6";
 
 const Products = () => {
-    const {data,getProducts,addFavorites} = useContext(CustomContext)
+    const {data,getProducts,addFavorites,favorites,deleteFavorites,addQuantity,Search} = useContext(CustomContext)
     const [size,setSize] = useState("")
+
     useEffect(() => {
         getProducts()
     },[])
@@ -52,7 +53,7 @@ const Products = () => {
                         По убыванию
                     </option>
                 </select>
-
+                <input onChange={(e) => Search(e)} type="text" placeholder={"Поиск"}/>
             </div>
             <div className="products__row">
                 {
@@ -63,8 +64,19 @@ const Products = () => {
                                 <path d="M0 0H40V40H20C8.95431 40 0 31.0457 0 20V0Z" fill="#E0BEA2"/>
 
                             </svg>
-                            <CiHeart onClick={() => addFavorites(item)} className={"products__card-svg-nth"}/>
-                            <FaHeart className={"products__card-svg-nth"}/>
+                            {
+                                favorites.find(el => item.id == el.id)
+                                    ? <FaHeart onClick={(e) => {
+                                        e.preventDefault()
+                                        deleteFavorites(item.id)
+                                    }} className={"products__card-svg-nth"}/>
+                                    : <CiHeart onClick={(e) => {
+                                        e.preventDefault()
+                                        addFavorites(item)
+                                    }} className={"products__card-svg-nth"}/>
+                            }
+
+
                             <div>
                                 <img className={"products__card-img"} src={item.images[0].img} alt=""/>
                                 <h2 className={"products__card-title"}>
@@ -91,7 +103,11 @@ const Products = () => {
                         </Link>
                     ))
                 }
+
             </div>
+            <button onClick={addQuantity} className={"products__add"}>
+                Eще
+            </button>
         </section>
     );
 };

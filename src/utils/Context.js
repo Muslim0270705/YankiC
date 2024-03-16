@@ -14,25 +14,37 @@ export const Context = (props) => {
     const [cart,setCart] = useState([])
     const [cartPrice, setCartPrice] = useState(0)
     const [favorites , setFavorites] = useState([])
-
+    const [quantity,setQuantity] = useState(6)
+    const [search,setSearch] = useState("")
     const getProducts = (id) => {
-        axios(`http://localhost:4444/products`)
+        axios(`http://localhost:4444/products?_limit=${quantity}&${search ? `title=${search}` : ""}`)
             .then(({data}) => setData(data.filter(item => id ? item.category.id == id : item )))
             .catch((err) => alert(err))
+    }
+    const Search = (e) => {
+        setSearch(e.target.value)
     }
     useEffect(() => {
         setCartPrice(cart.length ? cart.reduce((acc, res) => acc + (res.price * res.count), 0) : 0);
     }, [cart]);
+    const addQuantity = () => {
+        setQuantity(quantity + 3)
+    }
     useEffect(() => {
-        getProducts(categoryId)
-    }, [categoryId]);
+        getProducts()
+    }, [quantity,search]);
     const getOneProduct = (id) => {
         axios(`http://localhost:4444/products/${id}`)
             .then(({data}) => setProduct(data))
             .catch((err) => alert(err))
     }
     const addFavorites = (item) => {
-        setFavorites([...favorites,item])
+        if(!favorites.find(el => item.id == el.id)){
+            setFavorites([...favorites,item])
+        }
+    }
+    const deleteFavorites = (id) => {
+        setFavorites(favorites.filter(el => id !== el.id))
     }
     const registerUser = (e,obj) => {
         e.preventDefault()
@@ -119,7 +131,11 @@ export const Context = (props) => {
          deleteItem,
          plusCount,
          minusCount,
-         addFavorites
+         addFavorites,
+         favorites,
+         deleteFavorites,
+         addQuantity,
+         Search
     }
 
     return <CustomContext.Provider value={value}>
